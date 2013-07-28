@@ -13,4 +13,5 @@ chown -R mysql data
 cp support-files/my-default.cnf /etc/my.cnf
 pwd
 ./bin/mysqld_safe --user=mysql &
-cp support-files/mysql.server /etc/init.d/mysql.server
+cp support-files/mysql.server /etc/init.d/mysqld
+ln -s /usr/local/mysql/include/* /usr/local/include/
