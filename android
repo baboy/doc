@@ -1,0 +1,2 @@
+keytool -list -keystore ~/Documents/common.keystore -alias xxxx
+jarsigner -verbose -keystore ~/Documents/keystore/asd.keystore  -signedjar ~/Downloads/tap_sign.apk ~/Downloads/tap_unsign.apk test
